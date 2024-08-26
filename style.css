@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
+    -webkit-user-select: none; /* Chrome, Safari, Opera */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* Internet Explorer/Edge */
+    user-select: none;         /* Non-prefixed version */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('Gedung-BKN-Manado.jpg'); /* Ganti 'background.jpg' dengan nama file gambar Anda */
+    background-size: cover; /* Mengatur gambar agar menutupi seluruh layar */
+    background-position: center; /* Menjaga gambar tetap di tengah */
+    background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9); /* Transparansi untuk membuat latar belakang gambar sedikit terlihat */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #9e9e9e;
+    outline: none;
+    font-size: 18px;
+    color: #333;
+}
+
+.input-group label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #9e9e9e;
+}
+
+.input-group input:focus ~ label,
+.input-group input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #3a86ff;
+    font-size: 14px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #3a86ff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Tambahkan style untuk elemen copyright */
+.copyright {
+    margin-top: 20px;
+    font-size: 12px;
+    text-align: center;
+    color: #666; /* Warna teks yang lebih ringan agar tidak terlalu menonjol */
+}
+
+.Ruangan {
+    font-size: 10px;
+    text-align: center;
+    color: #666;
+    margin-top: -25px;
+}
